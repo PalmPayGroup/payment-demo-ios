@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (5.8.0)
+  - IQKeyboardManager (6.5.12)
+  - PalmPayPayment (1.0.0.2311301)
+  - ProgressHUD (2.70)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManager
+  - PalmPayPayment
+  - ProgressHUD (= 2.70)
+  - SwiftyRSA
+
+SPEC REPOS:
+  https://github.com/PalmPayGroup/payment-demo-ios.git:
+    - PalmPayPayment
+  trunk:
+    - Alamofire
+    - IQKeyboardManager
+    - ProgressHUD
+    - SwiftyRSA
+
+SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  IQKeyboardManager: b1fd66ccf7a79095bdcc4a2735231586f744216e
+  PalmPayPayment: 8e11eefc3cd1ce0a83c7f5f8ee4125e5e43efb0b
+  ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
+
+PODFILE CHECKSUM: 96517a09a747657a6f964042e0a1135e618601bb
+
+COCOAPODS: 1.14.3

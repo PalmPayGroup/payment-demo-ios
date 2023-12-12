@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/PalmPayGroup/payment-demo-ios.git'
+
+target 'PaymentSDKDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  pod 'SwiftyRSA'
+  pod 'Alamofire'
+  pod 'ProgressHUD', '2.70'
+  pod 'IQKeyboardManager'
+  pod 'PalmPayPayment'
+
+  # Pods for PaymentSDKDemo
+
+  target 'PaymentSDKDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PaymentSDKDemoUITests' do
+    # Pods for testing
+  end
+
+end
+
+post_install do |installer|
+  # M1
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
+end
